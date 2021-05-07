@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%= title %></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+ 
+<div class="container">
+  <h2><%= title %></h2>
+  <form action='/save' method=post autocomplete="off">
+    <div class='row'>
+  
+      <label for="name" class="control-label col-sm-3" > name:</label>
+      <div class="col-sm-9">
+          <input class="form-control" type="text" id="name" name="name" placeholder="Enter student name" required> 
+      </div>
+      <label for="email" class="control-label col-sm-3">email:</label>
+      <div class="col-sm-9">
+          <input class="form-control" type="email" id="email" name="email"  placeholder="Enter email"required> 
+      </div>
+      <label for="phn_no" class="control-label col-sm-3">phn_no:</label>
+      <div class="col-sm-9">
+          <input class="form-control" type="text" id="phn_no" name="phn_no"  placeholder="Enter phn_no "required> 
+      </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+ 
+</body>
+</html>
